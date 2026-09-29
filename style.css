@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0b132b;
+    color: #e2e8f0;
+}
+
+/* Header & Navbar */
+.top-header {
+    background: #080d1a;
+}
+
+.navbar {
+    background: rgba(11, 19, 43, 0.85) !important;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    background: linear-gradient(45deg, #38bdf8, #818cf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar-nav .nav-link {
+    color: #cbd5e1 !important;
+    font-weight: 500;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #38bdf8 !important;
+}
+
+/* Digital Clock Bar */
+.clock-bar {
+    background: #0f172a;
+}
+
+.status-pulse {
+    width: 9px;
+    height: 9px;
+    background-color: #22c55e;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 8px #22c55e;
+    animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+.digital-clock-box {
+    background: rgba(15, 23, 42, 0.9);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.2);
+}
+
+#digital-clock-display {
+    letter-spacing: 2px;
+    color: #38bdf8 !important;
+    font-family: 'Courier New', monospace;
+    font-size: 1.05rem;
+    text-shadow: 0 0 8px rgba(56, 189, 248, 0.7);
+}
+
+/* Banner Carousel */
+.carousel-caption {
+    background: rgba(15, 23, 42, 0.75) !important;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+}
+
+.carousel-caption h1 {
+    background: linear-gradient(to right, #38bdf8, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* Futuristic Specialized Services Section Styling */
+.services-section {
+    position: relative;
+    padding: 80px 0;
+    background: radial-gradient(circle at center, rgba(56, 189, 248, 0.08) 0%, transparent 70%);
+}
+
+/* Glass & Cyberpunk Service Cards */
+.services-section .card {
+    background: rgba(15, 23, 42, 0.6) !important;
+    backdrop-filter: blur(16px) saturate(200%) !important;
+    -webkit-backdrop-filter: blur(16px) saturate(200%) !important;
+    border: 1px solid rgba(56, 189, 248, 0.2) !important;
+    border-radius: 20px !important;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+
+/* Card Cyberpunk Accent Line */
+.services-section .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #38bdf8, #818cf8, #c084fc);
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+/* Neon Glow Hover Effect */
+.services-section .card:hover {
+    transform: translateY(-10px) scale(1.02) !important;
+    border-color: rgba(56, 189, 248, 0.8) !important;
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.35), 
+                inset 0 0 15px rgba(56, 189, 248, 0.15) !important;
+}
+
+.services-section .card:hover::before {
+    opacity: 1;
+}
+
+/* Futuristic Animated Icon Container */
+.service-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(56, 189, 248, 0.1);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    position: relative;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+    transition: all 0.3s ease;
+}
+
+.services-section .card:hover .service-icon-wrapper {
+    background: rgba(56, 189, 248, 0.2);
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.6);
+    transform: rotate(360deg);
+}
+
+.service-icon-wrapper i {
+    font-size: 2rem;
+    background: linear-gradient(45deg, #38bdf8, #c084fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Modals */
+.modal-content {
+    background: #0f172a !important;
+    border-radius: 16px;
+}
+
+/* Buttons */
+.btn-primary {
+    background: linear-gradient(45deg, #0284c7, #2563eb) !important;
+    border: none !important;
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.4);
+}
+
+.btn-primary:hover {
+    box-shadow: 0 6px 18px rgba(56, 189, 248, 0.6);
+}
+
+/* Footer */
+footer {
+    background: #050914 !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Futuristic About Page Custom Styles */
+.glow-title {
+    background: linear-gradient(to right, #38bdf8, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+}
+
+/* Glassmorphism Cards for About & Mission */
+.about-card, .team-card {
+    background: rgba(15, 23, 42, 0.6) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    border: 1px solid rgba(56, 189, 248, 0.2) !important;
+    border-radius: 20px !important;
+    transition: all 0.4s ease !important;
+}
+
+.about-card:hover, .team-card:hover {
+    transform: translateY(-8px) !important;
+    border-color: rgba(56, 189, 248, 0.8) !important;
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.3) !important;
+}
+
+/* Futuristic Avatar Styling */
+.team-avatar-wrapper {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: rgba(56, 189, 248, 0.1);
+    border: 2px solid rgba(56, 189, 248, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+    transition: all 0.3s ease;
+}
+
+.team-avatar-wrapper i {
+    font-size: 2.5rem;
+    color: #38bdf8;
+}
+
+.team-card:hover .team-avatar-wrapper {
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.7);
+    border-color: #38bdf8;
+    transform: scale(1.05);
+}
+
+.team-socials a i {
+    transition: color 0.3s ease;
+}
+
+.team-socials a:hover i {
+    color: #38bdf8 !important;
+}
+
+/* Futuristic Career Box */
+.career-card {
+    background: rgba(15, 23, 42, 0.7);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.15);
+    transition: all 0.3s ease;
+}
+
+.career-card:hover {
+    border-color: #38bdf8;
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.3);
+}
+
+/* Fix White Background Override for Projects Page */
+
+/* 1. Projects Sidebar Category Fix */
+.project-filter-card {
+    background: rgba(15, 23, 42, 0.8) !important;
+    border: 1px solid rgba(56, 189, 248, 0.3) !important;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6) !important;
+}
+
+.list-group-custom .list-group-item {
+    background-color: transparent !important;
+    color: #e2e8f0 !important;
+    border: none !important;
+    margin-bottom: 4px;
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+}
+
+.list-group-custom .list-group-item:hover {
+    background-color: rgba(56, 189, 248, 0.15) !important;
+    color: #38bdf8 !important;
+    transform: translateX(5px);
+}
+
+.list-group-custom .list-group-item.active {
+    background: linear-gradient(90deg, #0284c7, #6366f1) !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 12px rgba(56, 189, 248, 0.5) !important;
+}
+
+/* 2. Project Cards Dark Glassmorphism Fix */
+.project-card {
+    background: rgba(15, 23, 42, 0.65) !important;
+    backdrop-filter: blur(16px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
+    border: 1px solid rgba(56, 189, 248, 0.25) !important;
+    border-radius: 20px !important;
+    transition: all 0.4s ease !important;
+}
+
+.project-card:hover {
+    transform: translateY(-8px) !important;
+    border-color: rgba(56, 189, 248, 0.8) !important;
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.35), 
+                inset 0 0 15px rgba(56, 189, 248, 0.1) !important;
+}
+
+/* 3. Button Styling Inside Project Card */
+.glow-btn {
+    color: #38bdf8 !important;
+    border: 1px solid #38bdf8 !important;
+    background: transparent !important;
+    transition: all 0.3s ease !important;
+}
+
+.glow-btn:hover {
+    background: #38bdf8 !important;
+    color: #0f172a !important;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.8) !important;
+}
+
+/* 4. Pagination White Background Fix */
+.pagination-cyber .page-item .page-link {
+    background-color: rgba(15, 23, 42, 0.8) !important;
+    border: 1px solid rgba(56, 189, 248, 0.3) !important;
+    color: #38bdf8 !important;
+}
+
+.pagination-cyber .page-item.active .page-link {
+    background-color: #38bdf8 !important;
+    color: #0f172a !important;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.6) !important;
+}
+
+/* Futuristic Contact Page Custom Styles */
+.contact-card {
+    background: rgba(15, 23, 42, 0.65) !important;
+    backdrop-filter: blur(16px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
+    border: 1px solid rgba(56, 189, 248, 0.25) !important;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Dark Futuristic Input Fields */
+.cyber-input {
+    background-color: rgba(10, 15, 29, 0.8) !important;
+    border: 1px solid rgba(56, 189, 248, 0.3) !important;
+    color: #38bdf8 !important;
+    border-radius: 10px !important;
+    padding: 12px 15px !important;
+    transition: all 0.3s ease !important;
+}
+
+.cyber-input::placeholder {
+    color: rgba(226, 232, 240, 0.4) !important;
+}
+
+.cyber-input:focus {
+    background-color: rgba(15, 23, 42, 0.95) !important;
+    border-color: #38bdf8 !important;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.4) !important;
+    color: #ffffff !important;
+}
+
+/* Glowing Submit Button */
+.glow-submit-btn {
+    background: #38bdf8 !important;
+    border: none !important;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.5) !important;
+    transition: all 0.3s ease !important;
+}
+
+.glow-submit-btn:hover {
+    background: #0284c7 !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.8) !important;
+    transform: translateY(-2px);
+}
+
+.info-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    background: rgba(56, 189, 248, 0.1);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Futuristic Services Accordion Custom Styling */
+.accordion-cyber .accordion-item {
+    background: rgba(15, 23, 42, 0.65) !important;
+    backdrop-filter: blur(16px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
+    border: 1px solid rgba(56, 189, 248, 0.25) !important;
+    border-radius: 16px !important;
+    overflow: hidden;
+    transition: all 0.3s ease !important;
+}
+
+.accordion-cyber .accordion-item:hover {
+    border-color: rgba(56, 189, 248, 0.6) !important;
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.2) !important;
+}
+
+.accordion-cyber .accordion-button {
+    background: rgba(15, 23, 42, 0.8) !important;
+    color: #ffffff !important;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 1.25rem 1.5rem;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.accordion-cyber .accordion-button:not(.collapsed) {
+    background: rgba(56, 189, 248, 0.15) !important;
+    color: #38bdf8 !important;
+    border-bottom: 1px solid rgba(56, 189, 248, 0.3) !important;
+}
+
+/* Arrow Icon Color in Dark Mode */
+.accordion-cyber .accordion-button::after {
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg) !important;
+}
+
+.accordion-cyber .accordion-body {
+    background: transparent !important;
+    color: #cbd5e1 !important;
+    font-size: 1rem;
+    line-height: 1.7;
+    padding: 1.25rem 1.5rem;
+}
