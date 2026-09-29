@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | SoftDev Ltd.</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Top Section -->
+    <div class="top-header text-white py-2 border-bottom border-secondary">
+        <div class="container-fluid d-flex justify-content-between align-items-center flex-wrap">
+            <div>
+                <small class="me-3"><i class="fas fa-envelope text-info me-1"></i> rathinbiswas782@gmail.com</small>
+                <small><i class="fas fa-phone text-info me-1"></i> +880 18899-08612</small>
+            </div>
+            <!-- Auth Buttons -->
+            <div id="auth-buttons">
+                <button type="button" class="btn btn-sm btn-outline-info me-1" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Section -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-terminal me-2"></i>SoftDev Ltd.
+            </a>
+            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb Bar -->
+    <div class="bg-dark py-2 px-4 border-bottom border-secondary">
+        <small class="text-secondary">
+            <a href="index.html" class="text-info text-decoration-none">Home</a> / <span class="text-light">Services</span>
+        </small>
+    </div>
+
+    <!-- Services Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="display-5 fw-bold text-white glow-title">Our Specialized Services</h1>
+                <p class="text-light opacity-75">We build powerful, enterprise-grade software tailored to modern business demands.</p>
+            </div>
+
+            <!-- Cyber Accordion Container -->
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion accordion-cyber" id="servicesAccordion">
+                        
+                        <!-- Item 1 -->
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="fas fa-code me-3 text-info"></i>Web Application Development
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#servicesAccordion">
+                                <div class="accordion-body text-light opacity-90">
+                                    We deliver end-to-end web applications built using React, Angular, Vue.js, Node.js, and Laravel. Highly secure, scalable, and responsive across all device platforms.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <i class="fas fa-mobile-screen-button me-3 text-info"></i>Mobile Application Development
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#servicesAccordion">
+                                <div class="accordion-body text-light opacity-90">
+                                    Native and cross-platform mobile solutions utilizing Flutter and React Native to provide seamless user experiences on iOS and Android with maximum efficiency.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="fas fa-wand-magic-sparkles me-3 text-info"></i>UI/UX Product Design
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#servicesAccordion">
+                                <div class="accordion-body text-light opacity-90">
+                                    Human-centered design process creating intuitive user flows, interactive prototypes, and futuristic visual identity interfaces for modern applications.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="text-white pt-4 pb-3 border-top border-secondary">
+        <div class="container text-center">
+            <p class="text-secondary mb-0"><small>&copy; 2026 SoftDev Ltd. All Rights Reserved.</small></p>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-white border-secondary">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title"><i class="fas fa-sign-in-alt me-2 text-info"></i>User Login</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" id="loginEmail" class="form-control bg-dark text-white border-secondary" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" id="loginPassword" class="form-control bg-dark text-white border-secondary" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-white border-secondary">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title"><i class="fas fa-user-plus me-2 text-info"></i>Create Account</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="registerForm">
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" id="regName" class="form-control bg-dark text-white border-secondary" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" id="regEmail" class="form-control bg-dark text-white border-secondary" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" id="regPassword" class="form-control bg-dark text-white border-secondary" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | SoftDev Ltd.</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Top Section -->
+    <div class="top-header text-white py-2 border-bottom border-secondary">
+        <div class="container-fluid d-flex justify-content-between align-items-center flex-wrap">
+            <div>
+                <small class="me-3"><i class="fas fa-envelope text-info me-1"></i> rathinbiswas782@gmail.com</small>
+                <small><i class="fas fa-phone text-info me-1"></i> +880 18899-08612</small>
+            </div>
+            <!-- Auth Buttons -->
+            <div id="auth-buttons">
+                <button type="button" class="btn btn-sm btn-outline-info me-1" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Section -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-terminal me-2"></i>SoftDev Ltd.
+            </a>
+            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb Bar -->
+    <div class="bg-dark py-2 px-4 border-bottom border-secondary">
+        <small class="text-secondary">
+            <a href="index.html" class="text-info text-decoration-none">Home</a> / <span class="text-light">About Us</span>
+        </small>
+    </div>
+
+    <!-- Company Overview Section -->
+    <section class="py-5">
+        <div class="container text-center">
+            <h1 class="display-5 fw-bold text-white mb-3 glow-title">Company Overview</h1>
+            <p class="lead text-light opacity-75 mb-5 max-w-700 mx-auto">
+                We are a premier software development firm committed to providing modern tech solutions and high-value digital products globally.
+            </p>
+
+            <div class="row g-4">
+                <!-- Mission -->
+                <div class="col-md-4">
+                    <div class="card about-card h-100 p-4">
+                        <div class="card-body">
+                            <div class="about-icon mb-3">
+                                <i class="fas fa-bullseye text-info fs-2"></i>
+                            </div>
+                            <h4 class="card-title text-white fw-bold mb-3">Mission</h4>
+                            <p class="card-text text-light">To deliver robust and scalable digital products that empower business operations seamlessly worldwide.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vision -->
+                <div class="col-md-4">
+                    <div class="card about-card h-100 p-4">
+                        <div class="card-body">
+                            <div class="about-icon mb-3">
+                                <i class="fas fa-eye text-info fs-2"></i>
+                            </div>
+                            <h4 class="card-title text-white fw-bold mb-3">Vision</h4>
+                            <p class="card-text text-light">To lead software innovation across global markets with highest standards of quality and engineering.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Values -->
+                <div class="col-md-4">
+                    <div class="card about-card h-100 p-4">
+                        <div class="card-body">
+                            <div class="about-icon mb-3">
+                                <i class="fas fa-shield-halved text-info fs-2"></i>
+                            </div>
+                            <h4 class="card-title text-white fw-bold mb-3">Values</h4>
+                            <p class="card-text text-light">Integrity, continuous technical excellence, and client-first partnership in every project.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <section class="py-5 bg-dark-gradient">
+        <div class="container text-center">
+            <h2 class="display-6 fw-bold text-white mb-5 glow-title">Our Team</h2>
+            
+            <div class="row g-4 justify-content-center">
+                <!-- Team Member 1 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card team-card h-100 p-4">
+                        <div class="card-body">
+                            <div class="team-avatar-wrapper mb-3 mx-auto">
+                                <i class="fas fa-user-astronaut"></i>
+                            </div>
+                            <h4 class="card-title text-white fw-bold"> Oitijjo Biswas Khushi</h4>
+                            <p class="text-info fw-semibold mb-3">Lead Architect</p>
+                            <div class="team-socials">
+                                <a href="#" class="text-light me-3"><i class="fab fa-linkedin fs-5"></i></a>
+                                <a href="#" class="text-light"><i class="fab fa-github fs-5"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card team-card h-100 p-4">
+                        <div class="card-body">
+                            <div class="team-avatar-wrapper mb-3 mx-auto">
+                                <i class="fas fa-user-ninja"></i>
+                            </div>
+                            <h4 class="card-title text-white fw-bold">Raj Biswas</h4>
+                            <p class="text-info fw-semibold mb-3">UI/UX Designer</p>
+                            <div class="team-socials">
+                                <a href="#" class="text-light me-3"><i class="fab fa-linkedin fs-5"></i></a>
+                                <a href="#" class="text-light"><i class="fas fa-globe fs-5"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Opportunities Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="display-6 fw-bold text-white text-center mb-5 glow-title">Career Opportunities</h2>
+            
+            <div class="career-card p-4 rounded-4 d-flex justify-content-between align-items-center flex-wrap gap-3">
+                <div>
+                    <h4 class="text-white fw-bold mb-1">Senior Full Stack Developer</h4>
+                    <p class="text-light opacity-75 mb-0">Full-time | React & Node.js experience required</p>
+                </div>
+                <div>
+                    <button class="btn btn-outline-info rounded-pill px-4 py-2">Apply Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="text-white pt-4 pb-3 border-top border-secondary">
+        <div class="container text-center">
+            <p class="text-secondary mb-0"><small>&copy; 2026 SoftDev Ltd. All Rights Reserved.</small></p>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-white border-secondary">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title"><i class="fas fa-sign-in-alt me-2 text-info"></i>User Login</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" id="loginEmail" class="form-control bg-dark text-white border-secondary" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" id="loginPassword" class="form-control bg-dark text-white border-secondary" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-white border-secondary">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title"><i class="fas fa-user-plus me-2 text-info"></i>Create Account</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="registerForm">
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" id="regName" class="form-control bg-dark text-white border-secondary" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" id="regEmail" class="form-control bg-dark text-white border-secondary" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" id="regPassword" class="form-control bg-dark text-white border-secondary" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

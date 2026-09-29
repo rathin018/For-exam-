@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoftDev Ltd. | Next-Gen Software Solutions</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Top Section -->
+    <div class="top-header text-white py-2 border-bottom border-secondary">
+        <div class="container-fluid d-flex justify-content-between align-items-center flex-wrap">
+            <div>
+                <small class="me-3"><i class="fas fa-envelope text-info me-1"></i> rathinbiswas782@gmail.com</small>
+                <small><i class="fas fa-phone text-info me-1"></i> +880 18899-08612</small>
+            </div>
+            <!-- Auth Buttons -->
+            <div id="auth-buttons">
+                <button type="button" class="btn btn-sm btn-outline-info me-1" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Section -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-terminal me-2"></i>SoftDev Ltd.
+            </a>
+            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Live Futuristic Digital Clock & System Status Bar -->
+    <div class="clock-bar py-2 border-bottom border-secondary">
+        <div class="container-fluid d-flex justify-content-between align-items-center flex-wrap">
+            <div class="d-flex align-items-center">
+                <span class="status-pulse me-2"></span>
+                <small class="text-light opacity-75">SYS_STATUS: <span class="text-success fw-bold">ONLINE</span></small>
+            </div>
+            <!-- Real-time Digital Clock Output -->
+            <div class="digital-clock-box px-3 py-1 rounded">
+                <small class="text-secondary me-2"><i class="fas fa-clock text-info me-1"></i>SYSTEM TIME:</small>
+                <span id="digital-clock-display" class="fw-bold">--:--:-- --</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banner / Hero Carousel Section -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="height: 480px;">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80" class="d-block w-100 h-100" style="object-fit: cover; filter: brightness(0.55);" alt="Web Development">
+                <div class="carousel-caption d-none d-md-block p-4">
+                    <h1 class="display-5 fw-bold">Next-Gen Web Solutions</h1>
+                    <p class="lead">We architect and build scalable enterprise applications with modern technologies.</p>
+                    <a href="services.html" class="btn btn-primary btn-lg mt-2">Explore Services</a>
+                </div>
+            </div>
+            <div class="carousel-item" style="height: 480px;">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80" class="d-block w-100 h-100" style="object-fit: cover; filter: brightness(0.55);" alt="Team Work">
+                <div class="carousel-caption d-none d-md-block p-4">
+                    <h1 class="display-5 fw-bold">World Class Developers</h1>
+                    <p class="lead">Delivering full-cycle custom software development with agility.</p>
+                    <a href="projects.html" class="btn btn-primary btn-lg mt-2">View Portfolio</a>
+                </div>
+            </div>
+            <div class="carousel-item" style="height: 480px;">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" class="d-block w-100 h-100" style="object-fit: cover; filter: brightness(0.55);" alt="Tech Innovation">
+                <div class="carousel-caption d-none d-md-block p-4">
+                    <h1 class="display-5 fw-bold">Cloud & Mobile Engineering</h1>
+                    <p class="lead">Empowering startups and global enterprises with high-value digital products.</p>
+                    <a href="contact.html" class="btn btn-primary btn-lg mt-2">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="fs-1 text-white"><i class="fas fa-angle-left"></i></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="fs-1 text-white"><i class="fas fa-angle-right"></i></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+   <!-- Our Specialized Services Section -->
+<section class="services-section py-5">
+    <div class="container text-center">
+        <h2 class="mb-5 text-white">Our Specialized Services</h2>
+        <div class="row g-4">
+            
+            <!-- Service 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 p-4">
+                    <div class="card-body">
+                        <div class="service-icon-wrapper">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <h4 class="card-title text-white">Custom Web Apps</h4>
+                        <p class="card-text text-light">High-speed, scalable enterprise web solutions built on modern cloud architectures.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 p-4">
+                    <div class="card-body">
+                        <div class="service-icon-wrapper">
+                            <i class="fas fa-mobile-screen-button"></i>
+                        </div>
+                        <h4 class="card-title text-white">Mobile Engineering</h4>
+                        <p class="card-text text-light">Next-generation native & cross-platform apps designed for seamless iOS & Android performance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 p-4">
+                    <div class="card-body">
+                        <div class="service-icon-wrapper">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4 class="card-title text-white">AI & Automation</h4>
+                        <p class="card-text text-light">Smart AI integration, machine learning workflows, and cloud process automation.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- Footer Section -->
+    <footer class="text-white pt-4 pb-3">
+        <div class="container text-center">
+            <p class="text-secondary mb-0"><small>&copy; 2026 SoftDev Ltd. All Rights Reserved.</small></p>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-white border-secondary">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title"><i class="fas fa-sign-in-alt me-2 text-info"></i>User Login</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" id="loginEmail" class="form-control bg-dark text-white border-secondary" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" id="loginPassword" class="form-control bg-dark text-white border-secondary" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-white border-secondary">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title"><i class="fas fa-user-plus me-2 text-info"></i>Create Account</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="registerForm">
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" id="regName" class="form-control bg-dark text-white border-secondary" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" id="regEmail" class="form-control bg-dark text-white border-secondary" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" id="regPassword" class="form-control bg-dark text-white border-secondary" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Guaranteed Working Digital Clock Script -->
+    <script>
+     function runLiveDigitalClock() {
+            const now = new Date();
+            let hours = now.getHours();
+            let minutes = now.getMinutes();
+            let seconds = now.getSeconds();
+            const ampm = hours >= 12 ? 'PM' : 'AM';
+
+            hours = hours % 12;
+            hours = hours ? hours : 12;
+
+            hours = hours < 10 ? '0' + hours : hours;
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+
+            const timeFormatted = hours + ':' + minutes + ':' + seconds + ' ' + ampm;
+            
+            const clockTarget = document.getElementById('digital-clock-display');
+            if (clockTarget) {
+                clockTarget.innerHTML = timeFormatted;
+            }
+        }
+
+        // Run clock immediately and refresh every second
+        runLiveDigitalClock();
+        setInterval(runLiveDigitalClock, 1000);
+    </script>
+
+    <!-- Custom App Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>
